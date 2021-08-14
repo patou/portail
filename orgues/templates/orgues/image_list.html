@@ -10,6 +10,7 @@
 {% block card-body %}
   <div class="row" id="image_list">
   {% with image=orgue.image_principale %}
+    {% if image %}
     <div class="col-lg-4 image">
       <div class="card">
         <div class="portfolio-item img-zoom pb-0">
@@ -40,6 +41,7 @@
         </div>
       </div>
     </div>
+      {% endif %}
     {% endwith %}
     <div class="col">
       <p>
